@@ -1,0 +1,1225 @@
+@import 'variables';
+
+@media (min-width:  1550px){
+	.header-top-style-8 {
+		.topbar {
+			padding-top: 0;
+			padding-bottom: 0;
+			background:  linear-gradient(to right, @primary-color 0%, @primary-color 75%, @secondary-color 75%, @secondary-color 100%);
+			.topbar-right {
+				.widget{
+					line-height: 57px;
+					&:first-child {
+						padding-right: 50px;
+						background-color: @secondary-color;
+						a {
+							.fa {
+								color: #fff;
+							}
+						}
+						.amwal-lang_sel,
+						#lang_sel {
+							& > ul > li {
+								a {
+									&.lang_sel_sel {
+										color: #fff !important;
+										&:after {
+											color: #fff !important;
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+			.topbar-left {
+				padding-top: 20px;
+				padding-bottom: 20px;
+			}
+		}
+	}
+}
+
+@media (max-width: 1366px ){
+	.header-top-style-2 {
+		.site-header {
+			.header-col-right {
+				position: static;
+				padding-top: 10px;
+				text-align: center;
+				.amwal-language-switcher > ul > li a.lang_sel_sel {
+					padding-bottom: 5px;
+				}
+			}
+
+			.header-col-left {
+				width: 100%;
+				float: none;
+			}
+		}
+	}
+}
+
+
+@media (max-width: 1201px) {
+	.topbar {
+		.topbar-left,
+		.topbar-right {
+			display: flex;
+			justify-content: center;
+			.widget {
+				float: initial;
+			}
+		}
+		.topbar-right {
+			margin-top: 15px;
+		}
+	}
+
+	.header-transparent {
+		&.header-top-style-1 {
+			.topbar {
+				padding-top: 20px;
+				padding-bottom: 20px;
+			}
+			&.has-topbar {
+				.site-header {
+					top: 89px;
+				}
+			}
+
+			&.admin-bar {
+				&.has-topbar {
+					.site-header {
+						top: 121px;
+					}
+				}
+			}
+		}
+	}
+
+	.header-top-style-3 {
+		.site-header {
+			.header-col-right {
+				position: static;
+				padding: 10px 15px 0;
+				text-align: center;
+
+				.header-socials,
+				.amwal-language-switcher,
+				.header-info {
+					padding: 0 20px;
+					display: inline-block;
+				}
+
+
+			}
+		}
+	}
+
+	.header-top-style-7 {
+		.site-header {
+			.col-header {
+				.header-col-right {
+					.extra-button {
+						display: none;
+					}
+					.header-info {
+						float: right;
+					}
+				}
+			}
+		}
+	}
+
+	.header-top-style-8 {
+		.site-header {
+			.extra-button {
+				display: none;
+			}
+		}
+	}
+
+	.amwal-service-item  {
+		.service-col-left,
+		.service-col-right {
+			width: 100%;
+		}
+
+		.service-col-left {
+			.entry-image {
+				img {
+					width: 100%;
+				}
+			}
+		}
+
+		.service-col-right {
+			position: static;
+			padding: 0 15px;
+
+			.entry-content {
+				.entry-title {
+					border: 0;
+				}
+			}
+		}
+	}
+
+	.amwal-team-item {
+		.team-col-left {
+			width: 25%;
+			float: left;
+		}
+		.team-col-right {
+			position: static;
+			width: 75%;
+			padding: 0 15px;
+			background-color: transparent;
+			.entry-content {
+				background-color: #f6f6f6;
+			}
+		}
+	}
+
+	.blog-view-list {
+		.item-new-list {
+			.new-col-left {
+				width: 100%;
+				.entry-image {
+					img {
+						width: 100%;
+					}
+				}
+			}
+
+			.new-col-right {
+				width: 100%;
+				position: static;
+				padding: 0 15px;
+				top: 0;
+				transform: translate(0);
+			}
+		}
+	}
+
+	.page-template-template-coming-soon {
+		.amwal-coming-soon {
+			.sale-price-date {
+				.box {
+					font-size: 48px;
+					min-width: 120px;
+				}
+			}
+		}
+	}
+
+}
+
+
+@media (max-width: 1200px) and (min-width: 991px) {
+	.header-top-style-7 {
+		.header-primary-menu {
+			.extra-button {
+				display: block !important;
+			}
+		}
+	}
+}
+
+@media (max-width: 1024px) {
+
+	.container {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+
+	.site-header {
+
+		> .container {
+			display: flex;
+
+			.navbar-toggle,
+			.menu-logo,
+			.menu-extra {
+				flex: 1;
+			}
+		}
+
+		.navbar-toggle {
+			display: flex;
+			padding-left: 0;
+			align-items: center;
+			padding: 0;
+			margin: 0;
+		}
+
+		.primary-nav {
+			display: none;
+		}
+
+		.menu-logo a.logo {
+			justify-content: center;
+
+			img {
+				width: auto;
+				max-width: 100%;
+				height: auto;
+			}
+		}
+
+		.menu-extra {
+			padding-top: 32px;
+
+			.menu-item-search {
+				display: none;
+			}
+
+			.extra-menu-item {
+				&.menu-item-cart {
+					padding-bottom: 20px;
+				}
+			}
+
+		}
+	}
+
+	.header-top-style-2 {
+		.site-header {
+			.header-col-left {
+				display: flex;
+
+				.menu-logo,
+				.navbar-toggle {
+					flex: 1;
+				}
+
+				.menu-logo {
+					.logo {
+						justify-content: flex-start;
+					}
+				}
+
+				.navbar-toggle {
+					justify-content: flex-end;
+					padding-right: 20px;
+				}
+			}
+
+			.header-col-right {
+				.amwal-language-switcher {
+					display: none;
+				}
+			}
+		}
+	}
+
+	.header-top-style-3 {
+		.site-header {
+			background-color: transparent;
+			.header-col-right {
+				padding: 10px 15px;
+				background-color: #222;
+
+				.amwal-language-switcher {
+					display: none;
+				}
+			}
+
+			.header-col-left {
+				position: static;
+				display: flex;
+				background-color: @primary-color;
+				.menu-logo {
+					.logo {
+						height: 100%;
+						padding: 0;
+					}
+				}
+
+				.navbar-toggle {
+					flex: 1;
+					justify-content: flex-end;
+					padding-right: 20px;
+					.am-navbar-icon {
+						.navbars-line {
+							background-color: #fff;
+							&:before,
+							&:after {
+								background-color: #fff;
+							}
+						}
+					}
+				}
+			}
+
+		}
+	}
+
+	.header-top-style-4 {
+		.site-header {
+			> .container {
+				display: block;
+			}
+			.header-col-left {
+				width: 0;
+				display: none;
+			}
+
+			.header-col-right {
+				width: 100%;
+
+				.header-info {
+					display: flex;
+					justify-content: center;
+					padding: 10px 0;
+				}
+			}
+
+			.header-primary-menu {
+				background-color: #fff;
+				border-top: 1px solid #eee;
+
+				.menu-col-right {
+					width: 0;
+					display: none;
+				}
+
+				> .container > .row {
+					width: 100%;
+				}
+
+				.menu-col-left {
+					width: 100%;
+					.menu-logo-mobile {
+						display: inline-block;
+					}
+
+					.navbar-toggle {
+						padding: 0;
+						margin: 0;
+						position: absolute;
+						right: 15px;
+						top: 50%;
+						transform: translateY(-50%);
+					}
+				}
+			}
+		}
+	}
+
+	.header-top-style-5 {
+		.site-header {
+
+			> .container {
+				justify-content: center;
+			}
+
+			.header-primary-menu {
+				display: none;
+			}
+
+			.col-header {
+				.header-col-left {
+					display: none;
+					width: 0;
+				}
+
+				.header-col-right {
+					width: 100%;
+				}
+			}
+			.header-primary-mobile {
+				margin-top: 10px;
+				border-top: 1px solid  #eee;
+				.menu-logo-mobile {
+					display: block;
+				}
+
+				.navbar-toggle {
+					padding: 0;
+					margin: 0;
+					position: absolute;
+					right: 15px;
+					top: 50%;
+					transform: translateY(-50%);
+				}
+			}
+		}
+	}
+
+	.header-top-style-6,
+	.header-top-style-7 {
+		.site-header {
+
+			> .container {
+				justify-content: center;
+			}
+
+			.col-header {
+				.header-col-left {
+					width: 0;
+					display: none;
+				}
+				.header-col-right {
+					width: 100%;
+				}
+			}
+
+			.header-primary-menu {
+
+				.menu-col-left {
+					width: 100%;
+
+					.menu-logo-mobile {
+						display: block;
+					}
+
+					.navbar-toggle {
+						padding: 0;
+						margin: 0;
+						position: absolute;
+						right: 15px;
+						top: 50%;
+						transform: translateY(-50%);
+					}
+				}
+
+				.menu-col-right {
+					width: 0;
+					display: none;
+				}
+			}
+		}
+	}
+
+	.header-top-style-6 {
+		.site-header {
+			.header-primary-menu {
+				background-color: #fff;
+				margin-top: 10px;
+				border-top: 1px solid  #eee;
+
+			}
+		}
+	}
+
+	.header-top-style-7 {
+		.site-header {
+			.header-info {
+				padding: 15px 0;
+			}
+		}
+
+	}
+
+	.header-top-style-8 {
+		.site-header {
+			> .container {
+				display: block;
+			}
+
+			.col-header {
+				.header-col-left {
+					width: 100%;
+
+					.menu-logo {
+						.logo {
+							height: 58px;
+						}
+					}
+
+					.navbar-toggle {
+						padding: 0;
+						margin: 0;
+						height: 58px;
+					}
+				}
+
+				.header-col-right {
+					width: 0;
+					display: none;
+				}
+			}
+		}
+
+	}
+
+	.header-transparent {
+
+		.site-header {
+			.navbar-toggle {
+				.navbars-line {
+					background-color: #fff;
+
+					&:before,
+					&:after {
+						background-color: #fff;
+					}
+				}
+			}
+		}
+
+		&.header-top-style-1 {
+			.topbar {
+				position: static;
+				background-color: #222;
+
+				.amwal-lang_sel,
+				#lang_sel {
+					display: none;
+				}
+			}
+
+			.site-header {
+				position: static;
+				background-color: @primary-color;
+			}
+		}
+
+		&.header-top-style-2 {
+			.site-header {
+				position: static;
+
+				.header-col-right {
+					padding: 10px 0;
+					background-color: #222;
+				}
+
+				.header-col-left {
+					background-color: @primary-color;
+				}
+
+			}
+		}
+	}
+}
+
+@media (max-width: 991px) {
+
+	.topbar {
+		.widget {
+			.amwal-lang_sel,
+			&.widget_icl_lang_sel_widget {
+				display: none !important;
+			}
+		}
+	}
+
+	.site-banner h1 {
+		font-size: 48px;
+	}
+
+	.site-content{
+		.widget-area {
+			padding-top: 60px;
+		}
+	}
+
+	.site-info {
+		.footer-menu {
+			text-align: center;
+		}
+		.copyright {
+			margin-top: 20px;
+			text-align: center;
+		}
+	}
+
+	.page-template-template-coming-soon {
+		.amwal-coming-soon {
+			.sale-price-date {
+				.box {
+					font-size: 30px;
+					min-width: 80px;
+				}
+			}
+		}
+	}
+
+	.blog-view-grid .item-new-list .no-offset {
+		margin-top: 0;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+
+	.comment-form {
+
+		.comment-form-author,
+		.comment-form-email,
+		.comment-form-url {
+			padding-left: 0;
+			padding-right: 0;
+		}
+	}
+
+}
+
+@media (max-width: 991px) and (min-width: 768px) {
+
+	.blog{
+		&.blog-view-grid {
+			.item-new-list {
+				.entry-content {
+					.entry-meta {
+						padding: 5px 0;
+						float: none;
+						display: block;
+					}
+				}
+			}
+		}
+	}
+
+	.woocommerce {
+		ul.products {
+			li.product {
+				&:nth-child(2n+1) {
+					clear: left;
+				}
+			}
+		}
+	}
+}
+
+
+@media (max-width: 767px){
+
+	.site-info {
+		.footer-menu {
+			ul.menu {
+				text-align: center;
+			}
+		}
+
+		.copyright {
+			text-align: center;
+			margin-top: 20px;
+		}
+
+	}
+
+	.post-type-archive-portfolio_project .portfolio-item .portfolio-image,
+	.tax-portfolio_category .portfolio-item .portfolio-image {
+		.entry-image {
+			img {
+				width: 100%;
+			}
+		}
+	}
+
+	.comment-list {
+		.comment {
+			.comment-author {
+				max-width: 80px;
+			}
+			.comment-content {
+				padding: 0;
+				margin-left: 100px;
+			}
+		}
+
+		.children {
+			padding: 0;
+		}
+
+	}
+
+	.woocommerce-cart {
+		.woocommerce {
+			table.shop_table {
+				thead {
+					.product-name {
+						padding-left: 20px;
+					}
+				}
+
+				td.product-name a {
+					display: block;
+				}
+			}
+		}
+	}
+
+
+	.woocommerce {
+		div.shop-toolbar {
+			margin-bottom: 20px;
+
+			form {
+				display: inline-block;
+			}
+
+			div[class*="col-"] {
+				text-align: center;
+				margin-bottom: 20px;
+
+				h2:after {
+					left: 50%;
+					transform: translateX(-50%);
+				}
+			}
+		}
+
+		ul.products {
+			li.product {
+				.product-quick-view {
+					display: none;
+				}
+
+				a.add_to_cart_button,
+				a.added_to_cart {
+					float: none;
+				}
+			}
+		}
+	}
+
+}
+
+@media (max-width: 690px) {
+	.header-top-style-4,
+	.header-top-style-5,
+	.header-top-style-6,
+	.header-top-style-7 {
+		.header-info ul.contacts-info {
+			li {
+				display: block;
+				margin: 0;
+				padding-bottom: 10px;
+
+				&:last-child {
+					padding-bottom: 0;
+				}
+			}
+		}
+	}
+
+	.page-template-template-coming-soon {
+		.amwal-coming-soon {
+			.coming-logo {
+				margin-bottom: 30px;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+
+				img {
+					max-width: 150px;
+				}
+			}
+
+			.coming-title {
+				font-size: 14px;
+				margin-bottom: 30px;
+			}
+		}
+	}
+
+	.woocommerce-cart {
+		.woocommerce table.shop_table tr th,
+		.woocommerce table.shop_table tr td {
+			&.product-subtotal {
+				display: none;
+			}
+		}
+
+		.woocommerce {
+			table.cart td.actions {
+				.checkout-button,
+				.update-cart {
+					float: none;
+				}
+
+				.coupon {
+					margin-bottom: 20px;
+				}
+			}
+		}
+	}
+
+	.woocommerce {
+		table.shop_table {
+			.product-price {
+				display: none;
+			}
+
+			thead th {
+				font-size: 16px;
+			}
+
+			tr th, tr td {
+				padding: 10px 15px;
+			}
+
+			td {
+				&.product-name a {
+					font-size: 12px;
+				}
+
+				&.product-subtotal {
+					font-size: 14px;
+				}
+			}
+		}
+	}
+
+	.woocommerce-cart {
+		a.remove {
+			font-size: 14px;
+
+			.fa {
+				font-size: 12px;
+				margin-right: 5px;
+			}
+		}
+	}
+
+}
+
+@media (max-width: 620px) {
+	.header-transparent.header-top-style-1 .topbar {
+		padding: 10px 0;
+	}
+
+	.topbar {
+		.topbar-left,
+		.topbar-right {
+			display: inline-block;
+			text-align: center;
+			margin: 0;
+
+			.widget {
+				padding: 5px 10px;
+				display: inline-block;
+
+				&:first-child {
+					padding-top: 0;
+				}
+			}
+		}
+
+	}
+
+	.header-top-style-2,
+	.header-top-style-3 {
+		.site-header {
+			.header-col-right {
+				.header-info,
+				.header-socials {
+					width: 100%;
+					padding: 5px 0;
+				}
+			}
+		}
+	}
+
+	.amwal-service-item  {
+		.service-col-right {
+			.entry-content {
+				display: inline-block;
+				.entry-title {
+					width: 100%;
+					.service-title {
+						padding: 0;
+					}
+				}
+				.service-content {
+					width: 100%;
+					padding-left: 0;
+				}
+			}
+		}
+	}
+
+	.post-type-archive-portfolio_project {
+		.filters-dropdown {
+			ul.option-set {
+				li {
+					display: block;
+					padding: 0;
+
+					a {
+						display: block;
+						background-color: @primary-color;
+						border: 0;
+						color: #fff;
+					}
+				}
+			}
+		}
+	}
+
+}
+
+@media (max-width: 550px) {
+	 .topbar {
+		.topbar-left,
+		.topbar-right {
+			width: 100%;
+			text-align: center;
+		}
+
+		.topbar-right {
+			.widget {
+				&:first-child {
+					padding-top: 5px;
+				}
+			}
+		}
+	}
+
+}
+
+
+@media (max-width: 480px) {
+
+	.site-banner h1 {
+		font-size: 36px;
+	}
+
+	.primary-mobile-nav {
+		width: 300px;
+		left: -300px;
+		padding-bottom: 30px;
+
+		ul.menu {
+			li {
+				padding: 10px 28px 8px;
+
+				&.menu-parent-items {
+					padding: 10px 28px 8px;
+				}
+
+				.menu-back {
+					&:after {
+						top: 8px;
+					}
+				}
+			}
+		}
+	}
+
+	.header-top-style-3 {
+		.site-header {
+			.header-col-right {
+				.header-socials,
+				.header-info {
+					width: 100%;
+				}
+
+				.header-info {
+					span {
+						display: block;
+						padding: 5px 0 !important;
+					}
+				}
+			}
+		}
+	}
+
+	.footer-extra {
+		&.footer-extra-layout-1 {
+			.footer-social-content {
+				font-size: 28px;
+			}
+		}
+	}
+
+	.item-new-list {
+		.entry-content {
+			.entry-meta {
+				padding: 5px 0;
+				float: none;
+				display: block;
+			}
+		}
+	}
+
+	.amwal-team-item {
+		.team-col-left {
+			width: 100%;
+			float: none;
+		}
+		.team-col-right {
+			width: 100%;
+		}
+
+		.entry-content {
+			.entry-title {
+				float: inherit;
+			}
+			.team-item-social {
+				float: left;
+				margin-top: 10px;
+				.socials-icon {
+					li {
+						&:first-child {
+							padding-left: 0;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.testimonial-view-list {
+		.amwal-testimonial-item {
+
+			&:before {
+				left: 50%;
+				transform: translateX(-50%);
+			}
+
+			.entry-thumb {
+				display: block;
+				float: none;
+				max-width: 100%;
+				text-align: center;
+			}
+
+			.entry-content {
+				padding-left: 0;
+				padding-top: 20px;
+				text-align: center;
+			}
+		}
+	}
+
+	.error404 {
+		.not-found {
+			.page-content {
+				.logo-404 {
+					margin-bottom: 30px;
+				}
+				h2 {
+					font-size: 32px;
+					margin-top: 10px;
+				}
+				.page-title {
+					font-size: 100px;
+				}
+				h3 {
+					font-size: 18px;
+				}
+				.search-form {
+					margin-top: 30px;
+				}
+				.copyright {
+					margin-top: 40px;
+				}
+			}
+		}
+	}
+
+	.page-template-template-coming-soon {
+		.amwal-coming-soon {
+			.sale-price-date {
+				.box {
+					font-size: 20px;
+					min-width: 50px;
+					margin-right: 20px;
+				}
+			}
+		}
+	}
+
+	.woocommerce-cart {
+		.woocommerce table.shop_table td.product-name a {
+			font-size: 0;
+		}
+	}
+
+	.woocommerce  {
+		td.product-name dl.variation {
+			display: none;
+		}
+	}
+
+
+	.single-job {
+		div.responsibility,
+		div.skills {
+			width: 100%;
+			padding: 0;
+
+			h3 {
+				margin-bottom: 20px;
+			}
+		}
+
+		div.skills {
+			margin-bottom: 30px;
+		}
+	}
+}
+
+@media (max-width: 360px){
+
+	.amwal-team-item {
+		.entry-content {
+			padding-left: 20px;
+			padding-right: 20px;
+		}
+	}
+
+	.single-team_member {
+		.team-single {
+			.entry-header {
+				.team-info {
+					.team-contact {
+						float: none;
+						clear: both;
+						text-align: left;
+						padding-top: 10px;
+					}
+				}
+			}
+		}
+	}
+
+	.page-template-template-coming-soon {
+		.amwal-coming-soon {
+			.sale-price-date {
+				.box {
+					font-size: 18px;
+					margin-right: 10px;
+				}
+			}
+		}
+	}
+
+	.woocommerce-cart {
+		.woocommerce table.shop_table {
+			thead .product-name {
+				padding-left: 10px;
+			}
+			tr th,td {
+				padding: 10px;
+			}
+		}
+
+		.woocommerce table.cart td.actions {
+			.coupon {
+				.button,
+				.input-text {
+					width: 100%;
+				}
+
+				.input-text {
+					margin-bottom: 15px;
+				}
+			}
+
+			.checkout-button,
+			.update-cart {
+				width: 100%;
+			}
+
+			.update-cart {
+				margin-bottom: 15px;
+			}
+		}
+	}
+
+}
